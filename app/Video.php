@@ -11,3 +11,14 @@ class Video extends Model
         'src', 'description',
     ];
 }
+
+	public function event(){
+        return $this->hasOne('App\Event');
+    }
+    public function photo(){
+        return $this->hasMany('App\Photo');
+    }
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
