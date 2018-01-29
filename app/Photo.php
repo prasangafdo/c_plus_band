@@ -4,10 +4,10 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Event extends Model
+class Photo extends Model
 {
     //
     protected $fillable = [//Copied from user model and edited
-        'date', 'time', 'venue', 'description',
+        'src', 'description',
     ];
 }
