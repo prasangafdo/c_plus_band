@@ -18,3 +18,10 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::resource('events', 'EventController');//Events route
+Route::resource('photos', 'PhotoController');
+Route::resource('videos', 'VideoController');
+
+Route::get('/users', function () {//Just for testing
+    return (App\User::all());
+});
