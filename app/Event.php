@@ -11,3 +11,14 @@ class Event extends Model
         'date', 'time', 'venue', 'description',
     ];
 }
+
+	public function photo(){
+        return $this->hasMany('App\Photo');
+    }
+    public function video(){
+        return $this->hasMany('App\Video');
+    }
+
+    public function user(){
+        return $this->belongsTo('App\User');
+    }
