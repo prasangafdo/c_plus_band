@@ -15,7 +15,8 @@ class EventController extends Controller
     public function index()
     {
         //
-        return ("Event Controller");
+       $events = Event::all();
+        return view('users.index', ['events'=>$events]);
     }
 
     /**

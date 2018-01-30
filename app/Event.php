@@ -10,7 +10,6 @@ class Event extends Model
     protected $fillable = [//Copied from user model and edited
         'date', 'time', 'venue', 'description',
     ];
-}
 
 	public function photo(){
         return $this->hasMany('App\Photo');
@@ -22,3 +21,4 @@ class Event extends Model
     public function user(){
         return $this->belongsTo('App\User');
     }
+}

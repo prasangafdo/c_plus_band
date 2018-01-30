@@ -26,7 +26,6 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-}
 
     public function event(){
         return $this->hasMany('App\Event');
@@ -39,3 +38,4 @@ class User extends Authenticatable
     public function video(){
         return $this->hasMany('App\Video');
     }
+}
