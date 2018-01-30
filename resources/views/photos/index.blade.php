@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @extends('layouts/app')<!--Extend from the app layout-->
 @section('content')<!--Which section we need to extend-->
 
@@ -25,3 +26,6 @@
 </footer>
 </div>
 @endsection()
+=======
+{{"This is index blade of Photos controller"}}
+>>>>>>> master

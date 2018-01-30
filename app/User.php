@@ -38,4 +38,11 @@ class User extends Authenticatable
     public function video(){
         return $this->hasMany('App\Video');
     }
+<<<<<<< HEAD
 }
+=======
+
+}
+
+    
+>>>>>>> master

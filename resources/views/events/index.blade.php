@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {{"Events index.blade"}}
 
 <ul>
@@ -8,3 +9,6 @@
         <br/>
             @endforeach
         </ul> 
+=======
+{{"This is index blade of Events controller"}}
+>>>>>>> master

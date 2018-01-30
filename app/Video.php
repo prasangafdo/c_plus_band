@@ -11,7 +11,7 @@ class Video extends Model
         'src', 'description',
     ];
 
-	public function event(){
+    public function event(){
         return $this->hasOne('App\Event');
     }
     public function photo(){
@@ -21,4 +21,10 @@ class Video extends Model
     public function user(){
         return $this->belongsTo('App\User');
     }
+<<<<<<< HEAD
 }
+=======
+}
+
+	
+>>>>>>> master

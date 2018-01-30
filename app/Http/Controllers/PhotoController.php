@@ -15,8 +15,12 @@ class PhotoController extends Controller
     public function index()
     {
         //
+<<<<<<< HEAD
           $photos =Photo::all();
           return view('photos.index', ['photos'=> $photos]);
+=======
+          return view("photos.index");
+>>>>>>> master
     }
 
     /**
