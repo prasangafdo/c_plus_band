@@ -6,12 +6,16 @@
         <div class="panel-heading">Photos Gallery</div>
     <div class="panel-body">
         <ul class="list-group">
-         
+  <!--Tested imges with laravel       
+         <img class="img-responsive" src="/images/1.jpg"> Store the images in public folder
+
+    -->
          @foreach($photos as $photo)
         <li class="list-group-item">{{$photo->id}}</li><!-- This will return the full name from the database-->
         <li class="list-group-item">{{$photo->title}}</li>
         <li class="list-group-item">{{$photo->description}}</li>
         <li class="list-group-item">{{$photo->source}}</li>
+        <img class="img-responsive" src="{{$photo->source}}"/>
         <br/>
             @endforeach
         </ul> 
