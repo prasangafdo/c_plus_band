@@ -15,6 +15,18 @@ class CreatePhotosTable extends Migration
     {
          if (!Schema::hasTable('photos')){
 
+<<<<<<< HEAD:database/migrations/2018_01_29_100224_create_photos_table.php
+            Schema::create('photos', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('title');
+            $table->longText('source');
+            $table->longText('description');
+            $table->timestamps();
+        });
+         }
+            
+
+=======
         Schema::create('photos', function (Blueprint $table) {
             $table->increments('id');
             $table->string('source');
@@ -23,6 +35,7 @@ class CreatePhotosTable extends Migration
         });
 
          }
+>>>>>>> master:database/migrations/2018_01_29_100226_create_photos_table.php
     }
 
     /**

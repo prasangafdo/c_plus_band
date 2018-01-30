@@ -16,7 +16,11 @@ class CreateUsersTable extends Migration
     {
         if (!Schema::hasTable('users')){
 
+<<<<<<< HEAD
+            Schema::create('users', function (Blueprint $table) {
+=======
         Schema::create('users', function (Blueprint $table) {
+>>>>>>> master
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
@@ -25,7 +29,13 @@ class CreateUsersTable extends Migration
             $table->timestamps();
         });
         }
+<<<<<<< HEAD
+            
+
+    }
+=======
    }
+>>>>>>> master
 
     /**
      * Reverse the migrations.

@@ -14,17 +14,29 @@ class CreatePasswordResetsTable extends Migration
     public function up()
     {
          if (!Schema::hasTable('password_resets')){
+<<<<<<< HEAD
+            Schema::create('password_resets', function (Blueprint $table) {
+=======
 
        Schema::create('password_resets', function (Blueprint $table) {
+>>>>>>> master
             $table->string('email')->index();
             $table->string('token');
             $table->timestamp('created_at')->nullable();
+           // $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
         });
 
+<<<<<<< HEAD
+
+         }
+            
+     }
+=======
          }
             
  
     }
+>>>>>>> master
 
     /**
      * Reverse the migrations.

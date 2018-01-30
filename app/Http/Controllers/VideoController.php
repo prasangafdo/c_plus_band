@@ -15,7 +15,12 @@ class VideoController extends Controller
     public function index()
     {
         //
+<<<<<<< HEAD
+          $videos = Video::all();
+          return view('videos.index', ['videos'=>$videos]);
+=======
            return view("videos.index");
+>>>>>>> master
     }
 
     /**
